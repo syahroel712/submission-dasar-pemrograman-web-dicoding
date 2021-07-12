@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimoc Health</title>
+    <link rel="stylesheet" href="assets/styles/styleCekBeratBadanIdeal.css">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Swimoc Health</h1>
+            <p><i>"Di dalam tubuh yang sehat terdapat jiwa yang kuat"</i></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#artikel1">Cara Hitung</a></li>
+                <li><a href="index.html#artikel2">Manfaat</a></li>
+                <li><a href="cekBeratBadanIdeal.html">Cek Disini</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="cekberatbadan" class="card">
+                <h2>Aplikasi Cek Berat Badan Ideal</h2>
+                <p>
+                    Ok, pada aplikasi sederhana ini kita akan mencoba memeriksa apakah berat badan kita termasuk
+                    ideal/tidak. Pada aplikasi ini kita akan mengunakan metode kedua dari artikel <a
+                        href="index.html#artikel1">Cara Hitung Berat Badan Ideal</a> dimana nanati kita harus memasukkan
+                    berat badan dan tinggi badan kita saat ini.
+                </p>
+
+                <div class="formInput card">
+                    <div class="beratBadan">
+                        <label for="">Berat Badan</label>
+                        <input type="number" class="txt" id="beratB" placeholder="Dalam satuan kilogram">
+                    </div>
+                    <div class="tinggiBadan">
+                        <label for="">Tinggi Badan</label>
+                        <input type="number" class="txt" id="tinggiB" placeholder="Dalam satuan centimeter">
+                    </div>
+                    <div>
+                        <button id="BtnHitung" type="button" class="tombol">Cek Berat Badan Ideal</button>
+                    </div>
+                </div>
+
+                <div class="history card">
+                    <h2>Riwayat Perhitungan Cek Berat Badan Ideal</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Berat Badan</th>
+                                <th>Tinggi Badan</th>
+                                <th>Hasil</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyList"></tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>Submission Dasar Pemrograman Web &#169; 2020, Dicoding Academy || Syahrul</p>
+    </footer>
+    <script src="assets/styles/storage.js"></script>
+    <script src="assets/styles/cekBeratBadanIdeal.js"></script>
+</body>
+
+</html>

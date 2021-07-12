@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap');
+
+/* bagian body/ seluruh isi web nantinya */
+body {
+    font-family: 'Asap Condensed', 'Patrick Hand', 'Kalam', 'Acme', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #00a2c6;
+    text-align: center;
+}
+
+h3 {
+    color: #00a2c6;
+}
+
+
+/* bagian header */
+header {
+    display: inline;
+}
+
+/* bagian jumbotron */
+.jumbotron {
+    font-size: 1.18em;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: url('../image/header.jpg');
+    background-size: 100% 310px;
+    background-repeat: no-repeat;
+    text-shadow: 5px 5px #1887b0;
+}
+
+/* bagian nav/menu */
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 7px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+
+/* bagian main/isi content */
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+/* bagian content */
+#content {
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+}
+
+.txt {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.tombol {
+    width: 100%;
+    background-color: #00a2c6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* bagian card/penampung isi berita */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 35px;
+    margin-top: 20px;
+}
+
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+
+    /* properti mendukung */
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.history {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+
+    /* properti mendukung */
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 12px;
+}
+
+th {
+    background-color: #00a2c6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+
+/* bagian footer */
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 1000px */
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    table {
+        overflow: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: auto;
+        border: 1px solid #ddd;
+    }
+}
